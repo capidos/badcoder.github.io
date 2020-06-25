@@ -1,0 +1,114 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e8ecef;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+p {
+  font-size: 18px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #333;
+}
+
+.accent {
+  color: #999;
+}
+
+#first {
+  margin-top: 30px;
+}
+
+.container {
+  overflow: auto;
+  position: relative;
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url("../images/bg-section.jpeg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  filter: sepia(0.75);
+}
+
+.row {
+  margin: 0 15px;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  clear: both;
+  content: " ";
+}
+
+.column {
+  float: left;
+  padding: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.eight-of-12 {
+  width: calc(100% / 12 * 8);
+}
+
+.four-of-12 {
+  width: calc(100% / 12 * 4);
+}
+
+input[type="email"] {
+  height: 40px;
+  min-width: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn {
+  height: 40px;
+  background-color: #333;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  padding: 0 10px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+#newsletter {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.margin-50b {
+  margin-bottom: 50px;
+}
